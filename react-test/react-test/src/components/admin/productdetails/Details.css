@@ -1,0 +1,13 @@
+table{
+    width: 50%;
+    border-collapse: collapse;
+}
+
+th, tr{
+    padding: 20px;
+}
+.productimg{
+    width: 20%;
+    height: 20px;
+    object-fit: cover;
+}

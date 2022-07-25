@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url('https://images.ctfassets.net/rxqefefl3t5b/6I2vL9f0IVsDQ8qFgdrxH7/7660c4bab3116a4a04025d5c4802efa5/Virgin-Red-online-shopping-offers.jpg'); 
+  background-size: cover; 
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  width:240px;
+  height:310px;  
+}
+.register{
+padding-left:65%;
+padding-top: 10%;
+}
+.login-now{
+ padding-top:10px;
+}
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+    padding-left:300px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 20px;
+}
+ ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+    color: #ff0033c7;
+}
+</style>
+</head>
+<body>
+  <div class="menu">
+    <ul>
+        <li><a href="/">GOBack</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">PRODUCTS</a></li>
+        <li><a href="#">CATEGORY</a></li>
+        <li><a href="#">CONTACT</a></li>
+    </ul>
+</div>
+<div class="register">
+    <form action="/api/v1/user/signupPage" method="POST">
+           <fieldset class="flex-container"> 
+         <legend>Shopping</legend> 
+    
+       <input type="text" placeholder="userName" name="userName"><br>
+       
+         <input type="test" placeholder="password" name="password">
+         <br>
+         <input class="submit" type="submit" >
+         <div class="login-now">Don't have an account?
+          <a href="/signup" >SignUp now</a>
+          </div>
+        </fieldset>
+    </form>
+    
+</div>
+
+</body>
+</html>
